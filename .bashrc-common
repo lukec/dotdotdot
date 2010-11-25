@@ -5,6 +5,8 @@ export EDITOR=vim
 export TZ='America/Los_Angeles'
 export PAGER=less
 
+set -o vi
+
 path-prefix $HOME/bin
 path-prefix ./bin
 
@@ -110,7 +112,6 @@ alias tl='test-less'
 alias tlp='test-less --prove'
 alias dict='/usr/bin/dict -dall'
 alias viml='vim !! -l'
-alias tail=multitail
 
 alias pmf='perl Makefile.PL < /dev/null'
 alias mt='make test'
